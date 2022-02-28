@@ -26,7 +26,7 @@ namespace sr1
         public void Info()
         {
             Console.WriteLine($"Название аптеки{name},название лекарств{name_l}");
-            //mfbldkz
+            
         }
     }
 }
