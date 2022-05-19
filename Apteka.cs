@@ -9,6 +9,8 @@ namespace sr1
         public string name; //название аптеки
         public string name_l; //название лекарств
         public int money_l; //стоимость каждого лекарства
+        public int sum; //cумма всех лекарств
+        public int max;
         /// <summary>
         /// Конструктор
         /// </summary>
@@ -17,15 +19,17 @@ namespace sr1
         /// <param name="money_l"></param>
 
         //описание методов
-        public Apteka(string name, string name_l, int money_l)
+        public Apteka(string name, string name_l, int money_l,int sum, int max)
         {
             this.name = name;
             this.name_l = name_l;
             this.money_l = money_l;
+            this.sum = sum;
+            this.max = max;
         }
         public void Info()
         {
-            Console.WriteLine($"Название аптеки{name},название лекарств{name_l}");
+            Console.WriteLine($"{name_l}- {money_l} руб.");
             
         }
     }
